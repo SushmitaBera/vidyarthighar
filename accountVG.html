@@ -20,14 +20,12 @@
    	   <nav>
    	   	   <ul id="MenuItems">
    	   	   	   <li><a href="Vidhyarthi Ghar.html">Home</a></li>
-               <li><a href="">Hostels</a></li>
+               <li><a href="Hostels.html">Hostels</a></li>
                <li><a href="aboutus.html">About Us</a></li>
                <li><a href="accountVG.html">Account</a></li>
                <li><a href="contactVG.html">Contact Us</a></li>
    	   	   </ul>
    	   </nav>
-   	   <a href="cart.html"><img src="images/cart1.png" width="30px" height="30px"></a>
-       <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
    </div>  
 	</div>
 
@@ -55,12 +53,12 @@
             <a href="">Forgot Password</a>
           </form>   
 
-          <form id="RegForm">
-            <input type="text" placeholder="Username">
-            <input type="number" placeholder="Number">
-            <input type="email" placeholder="Email">
-            <input type="password" placeholder="Password">
-            <input type="password" placeholder="Confirm Password">
+          <form action="submit.php" id="RegForm" method="post">
+            <input type="text" placeholder="Username" name="Username" id="Username"> 
+            <input type="number" placeholder="Number" name="number" id="number">
+            <input type="email" placeholder="Email" name="email" id="email">
+            <input type="password" placeholder="Password" name="password" id="password">
+            <input type="password" placeholder="Confirm Password" name="cpassword" id="cpassword">
             <button type="submit" class="btn">Register</button>          
           </form>   
 
@@ -104,7 +102,7 @@
                 <li>Facebook</li>
                  <li>Twitter</li>
                   <li>Instagram</li>
-                   <li>YouTube</li>
+                   
               </ul>
             </div>
           </div>
